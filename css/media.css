@@ -1,0 +1,313 @@
+/* xl */
+/* @media (max-width:1399px){
+    .col-xl-6{
+        width: 50%;
+    }
+} */
+
+/* lg */
+@media (max-width:1199px){
+    .col-lg-3{
+        width: 25%;
+    }
+    .banner{
+        height: 100vh;
+    }
+    .tv-img img,.phone-img img,.mac-img img{
+        width: 100%;
+    }
+    .tv-img video{
+        width:45%;
+        left: 50%;
+    }
+    .phone-animate{
+        width:30%;
+        height: 18%;
+        padding: 4px 10px;
+        top: 65%;
+        left: 12%;
+    }
+    .mac-img video{
+        width: 32%;
+        top: 24%;
+        left:58%;
+    }
+    .child-text h2{
+        width: 90%;
+    }
+    .child-text p{
+        width: 90%;
+    }
+  
+}
+/* sm */
+@media (max-width:767px){
+    .col-sm-12{
+        width: 100%;
+    }
+        /* header */
+        header {
+            padding: 20px;
+            padding-top: 15px;
+        }
+    
+    
+        .navbar-logo img {
+            width: 100px;
+        }
+    
+        .select-box p {
+            display: none;
+        }
+    
+        .select-box a {
+            padding: 5px 15px;
+        }
+    
+        /* main */
+        .banner .banner-text h1 {
+            font-size: 32px;
+            line-height: 1.3;
+        }
+    
+        .banner .banner-text p {
+            font-size: 18px;
+            line-height: 1.3;
+        }
+    
+        .banner .banner-text h3 {
+            font-size: 18px;
+            padding: 0 24px;
+            letter-spacing: 1.2px;
+            font-weight: 400;
+        }
+    
+        .banner .banner-btn input,.faq .banner-btn input{
+            width: 280px;
+            padding-bottom: 4px;
+            margin-top: 20px;
+        }
+        
+        .banner .banner-btn a,.faq .banner-btn a {
+            width: 150px;
+            font-size: 16px;
+            padding: 15px 18px;
+            font-weight: 900;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    
+        .banner .banner-btn p,.faq .banner-btn p {
+            top: 46%;
+        }
+    
+        .banner-btn .inp1:focus~.p1,.faq .banner-btn .inp1:focus~.p1 {
+            top: 38%;
+            font-size: 10px;
+            left: 4%;
+        }
+        .tv-text h2{
+            font-size: 32px;
+            text-align: center;
+            letter-spacing: 1.1px;
+            line-height: 1.3;
+        }
+        .tv-text p{
+            font-size: 18px;
+            text-align: center;
+        }
+        .tv-img img,.phone-img img,.mac-img img{
+            width: 100%;
+        }
+        .tv-img video{
+            width: 75%;
+            left:10%;
+        }
+        .tv-img .vid1{
+            top: 40%;
+            right: 14%;
+        }
+        .phone-animate{
+            width:50%;
+            height: 10%;
+            padding: 4px 10px;
+            top: 55%;
+            left: 25%;
+        }
+        .phone-img{
+            margin-bottom: 30px;
+        }
+        .mac-img video{
+            width: 60%;
+            top: 35%;
+            left:20%;
+        }
+        .child-text p,.child-text h2{
+            text-align: center;
+            margin: 15px auto;
+        }
+        .faq .conatiner{
+            max-width: 1250px;
+        }
+        .faq-box span{
+            font-size: 18px;
+        }
+        .faq-btn .banner-text h3{
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 1.7px;
+            text-align: center;
+        }
+        .footer .footer-box p{
+            display: block;
+        }
+        .footer .container{
+            padding: 0 15px;
+        }
+        .conatiner{
+            padding: 0;
+        }
+}
+
+
+/* xs */
+@media (max-width:575px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+
+    /* header */
+    header {
+        padding: 20px;
+        padding-top: 15px;
+    }
+
+
+    .navbar-logo img {
+        width: 100px;
+    }
+
+    .select-box p {
+        display: none;
+    }
+
+    .select-box a {
+        padding: 5px 15px;
+    }
+
+    /* main */
+    .banner .banner-text h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .banner .banner-text p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .banner .banner-text h3 {
+        font-size: 18px;
+        padding: 0 24px;
+        letter-spacing: 1.2px;
+        font-weight: 400;
+    }
+
+    .banner .banner-btn,.faq .banner-btn {
+        flex-direction: column;
+    }
+
+    .banner .banner-btn input,.faq .banner-btn input{
+        width: 280px;
+        padding-bottom: 4px;
+    }
+
+    .banner .banner-btn a,.faq .banner-btn a {
+        width: 150px;
+        font-size: 16px;
+        padding: 15px 18px;
+        font-weight: 900;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .banner .banner-btn p,.faq .banner-btn p {
+        top: 22%;
+        left: 8%;
+    }
+
+    .banner-btn .inp1:focus~.p1,.faq .banner-btn .inp1:focus~.p1 {
+        top: 16%;
+        font-size: 10px;
+        left: 5%;
+    }
+    .tv-text h2{
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 1.1px;
+        line-height: 1.3;
+    }
+    .tv-text p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .tv-img img,.phone-img img,.mac-img img{
+        width: 100%;
+    }
+    .tv-img video{
+        width: 75%;
+        left: 10%;
+    }
+    .tv-img .vid1{
+        top: 50%;
+        right: 14%;
+    }
+    .phone-animate{
+        width:70%;
+        height: 10%;
+        padding: 4px 10px;
+        top: 40%;
+        left: 16%;
+    }
+    .phone-img{
+        margin-bottom: 30px;
+    }
+    .mac-img video{
+        width: 55%;
+        top: 45%;
+        left:25%;
+    }
+    .child-text p{
+        width: 280px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .faq .conatiner{
+        max-width: 1250px;
+    }
+    .faq-box span{
+        font-size: 18px;
+    }
+    .faq-btn .banner-text h3{
+        font-size: 18px;
+        width: 280px;
+        font-weight: 400;
+        letter-spacing: 1.7px;
+        text-align: center;
+    }
+    .footer .footer-box p{
+        display: block;
+    }
+    .footer .container{
+        padding: 0 15px;
+    }
+    .conatiner{
+        padding: 0;
+    }
+}

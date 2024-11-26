@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+:root{
+    --theme-white:#FFFFFF;
+    --theme-white-rgb:rgb(255, 255, 255,0.4);
+    --theme-black:#000000;
+    --theme-grey-bright:#c2bfbf;
+    --theme-grey:#2D2D2D;
+    --theme-grey-hover:#545252;
+    --theme-red:#E50914;
+    --theme-red-dark:rgb(173, 2, 11);
+    --theme-blue-text:#0464fd;
+
+}
+body{
+    background-color: var(--theme-black );
+    color: var(--theme-white);
+    line-height: 1.5;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    width: 8.33%;
+  
+}
+.col-2{
+    width: 16.66%;
+
+}
+.col-3{
+    width: 25%;
+
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.65%;
+}
+.col-6{
+    width: 50%;
+
+}
+.col-7{
+    width: 58.31%;
+
+}
+.col-8{
+    width: 66.64%;
+
+}
+.col-9{
+    width: 75%;
+
+}
+.col-10{
+    width: 83.3%;
+}
+.col-11{
+    width: 91.63%;
+}
+.col-12{
+    width: 100%;
+
+}
+.d-flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+img{
+    display: block;
+}
+a{
+    display:inline-block;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* common */
+.tv,.phone,.mac,.children,.faq,.footer{
+    padding: 72px 0;
+    border-top: 9px solid var(--theme-grey);
+}
+/* common */
+/* header start */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+}
+.navbar-logo{
+    width: 15%;
+}
+.navbar-logo img{
+    width: 100%;
+}
+.select-box{
+    column-gap: 20px;
+}
+.select-box p{
+    padding: 6px 16px;
+    border: 1px solid var(--theme-white-rgb);
+    border-radius: 5px;
+    transition: all ease 0.4s;
+    outline: 1px solid transparent;
+    font-size: 15px;
+}
+.select-box p::before{
+    content: "\41";
+    font: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.select-box p::after{
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.select-box p:hover{
+    outline:1px solid var(--theme-white);
+}
+.select-box a{
+    color: var(--theme-white);
+    padding: 6px 16px;
+    background-color: var(--theme-red);
+    border-radius: 3px;
+    font-size: 15px;
+    transition: all ease 0.4s;
+}
+.select-box a:hover{
+    background-color: var(--theme-red-dark);
+}
+/* header end */
+/* main start */
+/* banner start */
+.banner{
+    background: url(../images/banner-img/IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_large.jpg),linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.9) 100%);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.banner .banner-text h1,.tv-text h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+.banner .banner-text h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.banner .banner-text p,.tv-text p{
+    font-size: 24px;
+    margin:16px 0 25px 0;
+}
+.banner-btn{
+    column-gap: 10px;
+}
+.banner-btn input{
+    flex-grow: 1;
+    width: 400px;
+    background-color:rgba(27, 25, 25, 0.5);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 5px;
+    line-height: 1.5;
+    padding: 1.5rem 1rem 0.5rem;
+    
+}
+.banner-btn{
+    position: relative;
+    transition: all ease 0.6s;
+}
+
+.banner-btn .p1{
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    color: var(--theme-grey-bright);
+    transition: all ease 0.6s;
+}
+
+.banner-btn .inp1:focus,.form-content .inp2:focus{
+    border-color: white;
+    box-shadow: inset 0px 0px 4px white;
+}
+.banner-btn .inp1:focus ~ .p1{
+   top: 15%;
+   font-size: 10px;
+   left: 3%;
+}
+.banner-btn a{
+    padding: 16px 20px;
+    font-size: 21px;
+    color: var(--theme-white);
+    font-weight: 500;
+    background-color: var(--theme-red);
+    border-radius: 5px;
+    transition: all ease 0.4s;
+}
+.banner-btn a i{
+   margin-left: 10px;
+   font-weight: 501;
+}
+.banner-btn a:hover{
+    background-color: var(--theme-red-dark);
+}
+/* banner end */
+/* tv start */
+.tv{
+    position: relative;
+}
+.tv-img .vid1{
+    position: absolute;
+    top: 27%;
+    right: 13%;
+    z-index: -1;
+}
+.phone{
+    position: relative;
+}
+.phone-animate{
+    border: 2px solid var(--theme-white-rgb);
+    width:22%;
+    height: 15%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    position: absolute;
+    background-color: var(--theme-black);
+    top: 70%;
+    left: 18%;
+}
+.phone-boxshot{
+    width: 15%;
+
+}
+.download-icon{
+    width: 15%;
+
+}
+.animate-text span{
+    font-size: 14px;
+    color: var(--theme-blue-text);
+    font-weight: 500;
+}
+/* tv end */
+/* mac start */
+.mac{
+    position: relative;
+}
+.vid2{
+    position: absolute;
+    top: 20%;
+    right: 15.5%;
+    z-index: -1;
+   width: 27%;
+}
+/* mac end */
+/* child */
+.child-text p{
+    width: 550px;
+}
+/* child */
+/*faq start */
+.faq .tv-text h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.faq-box,.faq-content{
+    padding: 24px;
+    background-color: var(--theme-grey);
+    font-size: 24px;
+    cursor: pointer;
+}
+.faqp{
+    margin-bottom: 10px;
+}
+.faq-box:hover{
+    background-color: var(--theme-grey-hover);
+}
+.faq-btn .banner-text h3{
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.faq-content{
+    display: none;
+    font-size: 20px;
+}
+.rotate{
+    transform: rotate(45deg);
+    transition: all linear 0.2s;
+}
+/*faq end */
+/* main end */
+/* footer start */
+.footer,footer a{
+    font-size: 14px;
+    color: rgba(255, 255, 255,0.8);
+    font-weight: 300;
+}
+.footer .container{
+    padding: 0 48px;
+}
+footer a{
+    text-decoration: underline;
+}
+.footer ul li{
+    margin: 16px 0 0 12px;
+}
+.footerc12-1{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.footerc12-2{
+    font-size: 14px;
+}
+.footerc12-1 a{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+.footer-box{
+    margin: 24px 0;
+}
+/* footer end */
